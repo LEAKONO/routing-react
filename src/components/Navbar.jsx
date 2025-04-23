@@ -1,17 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Services from './Services'
-import Contact from './Contact'
-import About from './About'
-import Home from './Home'
 
 function Navbar() {
   return (
-    <div>
-        <Link  path='/'to={Home}/>
-        <Link path='/about' to={About}/>
-        <Link path='/services' to={Services}/>
-        <Link path='contact'to={Contact}/>
+    <div className="flex justify-end items-center gap-4 p-4 bg-white shadow-md">
+      <Link to="/" className="text-blue-500 text-xl no-underline hover:underline">
+        Home
+      </Link>
+      <Link to="/about" className="text-blue-500 text-xl no-underline hover:underline">
+        About
+      </Link>
+      <Link to="/services" className="text-blue-500 text-xl no-underline hover:underline">
+        Services
+      </Link>
+      <Link to="/contact" className="text-blue-500 text-xl no-underline hover:underline">
+        Contact
+      </Link>
     </div>
   )
 }
