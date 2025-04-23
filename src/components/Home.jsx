@@ -2,8 +2,8 @@ import React from 'react'
 
 function Home() {
   return (
-    <div>
-      <h3>Welcome to my website</h3>
+    <div className='flex justify-center items-center pt-20'>
+      <h3 className='text-2xl text-black'>Welcome to my website</h3>
     </div>
   )
 }
